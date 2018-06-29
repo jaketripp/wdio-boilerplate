@@ -213,7 +213,7 @@ exports.config = {
     afterTest: function (test) {
         const { parent, title, passed } = test;
         if (!passed) {
-            node.notifier({
+            notifier.notify({
                 title: 'Test failure!',
                 message: `${parent} ${title}`
             });
