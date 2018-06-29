@@ -1,0 +1,31 @@
+{
+  "name": "wdio-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for wdio, mocha, chai, and selenium.",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio",
+    "test:watch": "onchange 'src/**/*.*' 'test/**/*.js' -- wdio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaketripp/wdio-boilerplate.git"
+  },
+  "author": "Jake Tripp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaketripp/wdio-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jaketripp/wdio-boilerplate#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "node-notifier": "^5.2.1",
+    "onchange": "^4.0.0",
+    "selenium-standalone": "^6.15.1",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "webdriverio": "^4.13.1"
+  },
+  "dependencies": {
+    "wdio-mocha-framework": "^0.6.1"
+  }
+}
